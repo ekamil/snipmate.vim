@@ -47,8 +47,6 @@ snippet property
 # Lambda
 snippet ld
 	${1:var} = lambda ${2:vars} : ${3:action}
-snippet .
-	self.
 snippet try Try/Except
 	try:
 		${1:pass}
@@ -84,3 +82,12 @@ snippet ifmain
 # __magic__
 snippet _
 	__${1:init}__${2}
+# breakpoint
+snippet pudb
+	import pudb; pudb.set_trace()  # XXX
+# encoding
+snippet enc
+	# -*- coding: utf-8 -*-
+# args
+snippet args
+	*args, **kwargs):
